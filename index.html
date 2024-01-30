@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            font-size: 160%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pause til 10:35</h1>
+    <div id="app"></div>
+    <script>
+        /*
+          Variabler: 
+           - Deklarer
+           - Tilordner
+           - Lese
+        */
+        // let paidAmountPer;    // deklarasjon
+        // console.log(paidAmountPer);
+        // paidAmountPer = 3000; // tilordning - endre 
+        // document.getElementById('app').innerHTML = paidAmountPer; // lese verdi
+
+        // Bruker-input
+
+        let paidAmountPer = 3000; // deklarasjon og tilordning
+        let paidAmountPål = 300;
+        let paidAmountEspen = 0;
+
+        let totalPaidAmount = paidAmountEspen + paidAmountPer + paidAmountPål;
+        let costPerPerson = totalPaidAmount / 3;
+
+        let balancePer = paidAmountPer - costPerPerson;
+        let balancePål = paidAmountPål - costPerPerson;
+        let balanceEspen = paidAmountEspen - costPerPerson;
+
+        document.getElementById('app').innerHTML = /*HTML*/`
+            Totalkostnad: ${totalPaidAmount} <br/>
+            Kostnad per person: ${costPerPerson} <br/>
+            Per - til gode/skylder : ${balancePer} <br/>
+            Pål - til gode/skylder : ${balancePål} <br/>
+            Espen - til gode/skylder : ${balanceEspen} <br/>                
+        `;           
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <ol>
+        <li>Intro </li>
+        <li><b>Funksjon, variabel, operator, valg</b></li>
+        <li>MVC og innebygd</li>
+        <li>Løkker og lister</li>
+        <li>Enhetstesting</li>
+        <li>Objekter</li>    
+    </ol>
+
+    <h1>Plan for timen</h1>
+    <ol>
+        <li>Eksempel Variabler og operatorer</li>
+        <li>Eksempel Funksjoner med parametre</li>
+        <li>Siste eksempel også med variabler og operatorer </li>
+    </ol>
+</body>
+</html>
